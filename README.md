@@ -16,18 +16,18 @@ O projeto é uma REST full API onde é possível:
 
 ## Como executar?
 
-1 - No terminal, entre na pasta raiz do projeto;
-2 - Dentro da pasta raiz, instale as bibliotecas usadas com o seguinte comando: `npm install`;
-3 - E para rodar o projeto, use o seguinte comando: `npm run dev`;
+- No terminal, entre na pasta raiz do projeto.
+- Dentro da pasta raiz, instale as bibliotecas usadas com o seguinte comando: `npm install`.
+- E para rodar o projeto, use o seguinte comando: `npm run dev`.
 
 # Rotas
 
-http://localhost:3000/contas?senha_banco=Cubos123Bank - Para listar todas as contas existentes.
-http://localhost:3000/contas - Para criar uma conta.
-http://localhost:3000/contas/:numeroConta/usuario - Para atualizar os dados de uma conta.
-http://localhost:3000/contas/:numeroConta - Para deletar uma conta.
-http://localhost:3000/transacoes/depositar - Para efetuar um depósito em uma conta.
-http://localhost:3000/transacoes/sacar - Para efetuar um saque de uma conta.
-http://localhost:3000/transacoes/transferir - Para efetuar uma transferência de uma conta para outra.
-http://localhost:3000/conta/saldo/numero_conta=123&senha=123 - Para emitir o saldo da conta.
-http://localhost:3000/conta/extrato/numero_conta=123&senha=123 - Para emitir o extrato da conta.
+- http://localhost:3000/contas?senha_banco=Cubos123Bank - Para listar todas as contas existentes.
+- http://localhost:3000/contas - Para criar uma conta.
+- http://localhost:3000/contas/:numeroConta/usuario - Para atualizar os dados de uma conta.
+- http://localhost:3000/contas/:numeroConta - Para deletar uma conta.
+- http://localhost:3000/transacoes/depositar - Para efetuar um depósito em uma conta.
+- http://localhost:3000/transacoes/sacar - Para efetuar um saque de uma conta.
+- http://localhost:3000/transacoes/transferir - Para efetuar uma transferência de uma conta para outra.
+- http://localhost:3000/conta/saldo/numero_conta=123&senha=123 - Para emitir o saldo da conta.
+- http://localhost:3000/conta/extrato/numero_conta=123&senha=123 - Para emitir o extrato da conta.
