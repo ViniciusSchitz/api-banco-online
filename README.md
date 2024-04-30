@@ -31,3 +31,23 @@ O projeto é uma REST full API onde é possível:
 - http://localhost:3000/transacoes/transferir - Para efetuar uma transferência de uma conta para outra.
 - http://localhost:3000/conta/saldo/numero_conta=123&senha=123 - Para emitir o saldo da conta.
 - http://localhost:3000/conta/extrato/numero_conta=123&senha=123 - Para emitir o extrato da conta.
+
+# Ilustrações
+
+### Requisição para criar a conta
+
+<div align="centr">
+<img src="https://github.com/ViniciusSchitz/api-banco-online/assets/90482395/795a5688-77c0-4e68-a434-798450e0ff34" width="300px">
+<div/>
+
+### Requisição de saque
+
+<div align="centr">
+<img src="https://github.com/ViniciusSchitz/api-banco-online/assets/90482395/836b35a4-d802-45e5-b281-2b4c04748ca5" width="300px">
+<div/>
+
+### Requisição de transferência
+
+<div align="centr">
+<img src="https://github.com/ViniciusSchitz/api-banco-online/assets/90482395/0f349de6-1e70-4e0c-82da-75bd182ab9d7" width="300px">
+<div/>
