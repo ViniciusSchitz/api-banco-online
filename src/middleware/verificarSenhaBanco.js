@@ -1,6 +1,4 @@
-const { contas } = require('../banco-de-dados/bancodedados')
-
-const listarContas = (req, res) => {
+const verificarSenhaBanco = (req, res, next) => {
     const { senha_banco } = req.query;
 
     if (!senha_banco) {
@@ -10,8 +8,8 @@ const listarContas = (req, res) => {
     if (senha_banco !== "Cubos123Bank") {
         res.status(400).json({ "mensagem": "A senha do banco está errada !"})
     }
-    
-    return res.status(200).json(contas)
+
+    next()
 }
 
-module.exports = listarContas
+module.exports = verificarSenhaBanco;

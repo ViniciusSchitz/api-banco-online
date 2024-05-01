@@ -1,15 +1,7 @@
 const { contas } = require('../banco-de-dados/bancodedados');
 
-const saldo = (req, res) => {
+const verificarContaESenhaQuery = (req, res, next) => {
     const { numero_conta, senha } = req.query;
-
-    if (!numero_conta) {
-        return res.status(400).json({ "mensagem": "O número da conta deve ser informada!"})
-    }
-
-    if (!senha) {
-        return res.status(400).json({ "mensagem": "A senha da conta deve ser informada!"})
-    }
 
     const conta = contas.find((conta) => {
         return conta.numero === Number(numero_conta)
@@ -23,7 +15,7 @@ const saldo = (req, res) => {
         return res.status(400).json({ "mensagem": "A senha informada não está correta!"})
     }
 
-    return res.status(200).json({ "saldo": conta.saldo})
+    next()
 }
 
-module.exports = saldo;
+module.exports = verificarContaESenhaQuery;
